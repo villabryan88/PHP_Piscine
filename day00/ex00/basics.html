@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<style>
+			body {
+				background-color: pink;
+			}
+			#title{
+				font-size: 10em;
+				color: white;
+				text-align: center;
+			}
+			.flex-container{
+				display: flex;
+				height: auto;
+				flex-direction: row;
+				justify-content: center;
+			}
+			.flex-column{
+				padding: 10px;
+				display: flex;
+				flex-direction: column;
+			}
+			.flex-column > img{
+				height: 200px;
+			}
+			#copyright{
+				font-style: italic;
+				font-family: monospace;
+				text-align: right;
+			}
+			hr{
+				display: block;
+				height: 1px;
+				border: 0;
+				border-top: 2px solid #000000;
+				margin: 1em 0;
+				padding: 0; 
+			}
+		</style>
+		<title>Basics</title>
+	</head>
+	<body>
+		<h1 id="title">&rarr;Title&larr;</h1>
+		<br \>
+		<div class="flex-container">
+			<div class="flex-column">
+				<img src="https://sandiegoisbetter.com/wp-content/uploads/2016/11/amazon-square-icon.jpg">
+				<a href="http://www.amazon.com">amazon</a>
+			</div>
+			<div class="flex-column">
+				<img src="http://www.biltmorepark.com/sites/default/files/REI_08_1K.jpg">
+				<a href="http://www.rei.com">rei</a>
+			</div>
+		</div>
+		<hr>
+		<div id="copyright">
+			&copy; bvilla 2019
+		</div>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Calculator</title>
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#submit").click(function(){
+				a = $("#a").val();
+				b = $("#b").val();
+				let mathString = "Error :(";
+
+				if (/^\d+$/.test(a) && /^\d+$/.test(b))
+				{
+					b = parseInt(b);
+					op = $('#op').val();
+					if ((op == '%' || op == '/') && b === 0)
+						mathString = "It’s over 9000!";
+					else
+						mathString = eval(a + op + b);
+					console.log(mathString);
+				}
+				alert(mathString);
+			});
+			setInterval(function (){alert("Please, use me...");}, 30000);
+		});
+	</script>
+	<body>
+		<input type="text" id="a">
+		<select id="op">
+			<option id="plu" value="+">+</option>
+			<option id="min" value="-">-</option>
+			<option id="mul" value="*">*</option>
+			<option id="div" value="/">/</option>
+			<option id="mod" value="%">%</option>
+		</select>
+		<input type="text" id="b">
+		<input type="submit" id="submit" value="Try me!">
+	</body>
+
+</html>

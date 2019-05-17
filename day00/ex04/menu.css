@@ -1,0 +1,36 @@
+
+.menu{
+    display: inline-block;
+}
+.button{
+    background-color: orange;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+}
+.list {
+    display: none;
+    position: absolute;
+}
+.list a{
+    display: block;
+    width: 100px;
+    size: 14px;
+    padding: 7px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    background-color: darkcyan;
+    box-shadow: 0px 10px 15px rgb(0,0,0, 0.1);
+}
+
+.menu:hover .list{
+    display: block;
+}
+
+.list a:hover{
+    background-color: cyan;
+}
+.menu:hover .button{
+    background-color: darkorange;
+}

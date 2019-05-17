@@ -1,0 +1,109 @@
+body
+{
+    background-color: #505050;
+}
+.box {
+    background-color: #909090;
+    box-shadow: 10px 10px 10px #000000;
+    border-radius: 10px;
+}
+#title {
+    display: flex;
+    flex-direction: row;
+    width: 1422px;
+    height: 138px;
+    margin-top: 18px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#headerImg {
+    height: 110px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+#loupe {
+    height: 148px;
+    margin-top: 10px;
+    margin-left: 692px;
+
+}
+#reloadClose {
+    display: flex;
+    flex-direction: column;
+    width: 25px;
+}
+#reload {
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 80px;
+}
+#close {
+    width: 25px;
+}
+#body{
+    width: 1500px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+}
+.navi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 140px;
+    margin: 0 30px 0 30px;
+    height: 420px;
+    padding-bottom: 5px;
+}
+#lab {
+    min-width: 1025px;
+    height: 575px;
+    overflow: hidden;
+    padding: 10px;
+}
+.naviIcon {
+    margin-right:auto;
+    margin-left: auto;
+    width: 75px;
+    margin-top: 4px;
+}
+#eye {
+    border: 5px solid rgb(234, 51, 35);
+    border-radius: 5px;
+}
+#brick {
+    height: 70px;
+    width: 115px;
+    background-image: url("resources/brick.jpg");
+}
+#leftNavi {
+    padding-top: 5px;
+    justify-content: flex-start;
+}
+#greenBox {
+    position: fixed; 
+    z-index: 1; 
+    left: 185;
+    top: 685;
+    background-color:rgb(136, 255, 137);
+    width: 490px;
+    height: 140px;
+    padding: 5px 20px 20px 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+b {
+    font-size: 38px;
+    font-weight: 500;
+    font-family: serif;
+}
+#redShadow {
+    text-shadow: 4px 4px 4px red;
+}
+#input {
+    width: 390px;
+}

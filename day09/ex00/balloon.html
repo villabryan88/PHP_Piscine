@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<title>Awesome</title>
+		<style>
+			#balloon {
+				width: 200;
+				height: 200;
+				background-color: red;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="balloon" class="balloon"></div>
+	</body>
+	<script>
+		var balloon = document.getElementById("balloon");
+		balloon.onclick = function (){
+				var height = window.getComputedStyle(balloon).getPropertyValue('height');
+				var width = window.getComputedStyle(balloon).getPropertyValue('width');
+				var color = window.getComputedStyle(balloon).getPropertyValue('background-color');
+				balloon.style.height = parseInt(height, 10) + 10 + "px";
+				balloon.style.width = parseInt(width, 10) + 10 + "px";
+				if (parseInt(height) > 410)
+				{
+					balloon.style.height = "200px";
+					balloon.style.width = "200px";
+				}
+				if (color == 'rgb(255, 0, 0)')
+					balloon.style.backgroundColor = 'rgb(0, 255, 0)';
+				if (color == 'rgb(0, 255, 0)')
+					balloon.style.backgroundColor = 'rgb(0, 0, 255)';
+				if (color == 'rgb(0, 0, 255)')
+					balloon.style.backgroundColor = 'rgb(255, 0, 0)';
+		}
+		balloon.onmouseleave = function (){
+			var height = balloon.getBoundingClientRect().height;
+				var width = balloon.getBoundingClientRect().width;
+				var color = window.getComputedStyle(balloon).getPropertyValue('background-color');
+				if (height > 204)
+				{
+					balloon.style.height = parseInt(height, 10) - 5 + "px";
+					balloon.style.width = parseInt(width, 10) - 5 + "px";
+				}
+				else
+				{
+					balloon.style.height = "200px";
+					balloon.style.width = "200px";
+				}
+				if (color == 'rgb(255, 0, 0)')
+					balloon.style.backgroundColor = 'rgb(0, 0, 255)';
+				if (color == 'rgb(0, 255, 0)')
+					balloon.style.backgroundColor = 'rgb(255, 0, 0)';
+				if (color == 'rgb(0, 0, 255)')
+					balloon.style.backgroundColor = 'rgb(0, 255, 0)';
+		}
+	</script>
+</html>
